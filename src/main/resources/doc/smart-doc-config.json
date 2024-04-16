@@ -1,0 +1,61 @@
+{
+  "projectName": "etvms",
+  "outPath": "D:\\projects\\etvms\\doc\\",
+  "pathPrefix": "/etvms/",
+  "serverUrl": "http://192.168.50.71:80",
+  "allInOne": true,
+  "createDebugPage": true,
+  "responseExample": true,
+  "allInOneDocFileName": "index.html",
+  "isStrict": true,
+  "requestHeaders": [
+    {
+      "name": "Authorization",
+      "type": "string",
+      "desc": "用户Token",
+      "value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkeXEiLCJqdGkiOiIxIiwiZXhwIjoxNjcyMzkyNTA1fQ.T8krY1ecXbU8zEOoOldSK8x5cBrnP57heqJM_u3fH1cMe_woqihBnyovgJqmciBPelcnk68SsbrE594nsTNmnw",
+      "required": true,
+      "since": "-",
+      "pathPatterns": "/hft-bos/user/**",
+      "excludePathPatterns": "/hft-bos/user/login/**"
+    }
+  ],
+  "dataDictionaries": [
+    {
+      "title": "菜单类型",
+      "enumClassName": "com.lhhj.hft.user.infrastructure.repository.menu.MenuType",
+      "codeField": "sequence",
+      "descField": "name"
+    },
+    {
+      "title": "HTTP 请求方法",
+      "enumClassName": "com.lhhj.hft.user.infrastructure.repository.permission.RequestMethod",
+      "codeField": "code",
+      "descField": "name"
+    }
+  ],
+  "errorCodeDictionaries": [
+    {
+      "title": "错误码",
+      "enumClassName": "com.lihang.etvms.exception.HFTBackOfficeSystemExceptionMessage",
+      "codeField": "code",
+      "descField": "message"
+    }
+  ],
+  "revisionLogs": [
+    {
+      "version": "1.0.1",
+      "revisionTime": "2023-01-03",
+      "status": "update",
+      "author": "lh",
+      "remarks": "更新接口文档"
+    },
+    {
+      "version": "1.0.0",
+      "revisionTime": "2022-12-30",
+      "status": "update",
+      "author": "lh",
+      "remarks": "更新接口文档"
+    }
+  ]
+}
